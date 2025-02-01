@@ -27,16 +27,15 @@ LOGS =>
 */
 
 function triangles(num) {
-  let count = '#';
+  
+for (let i = 1; i <= num; i++){
+  let triangle = '';
+triangle += '#'
 
-  for (let i = 0; i < num; i++)
-  {
-    count += i
-    console.log(count)
-  }
-  return count;
+  return triangle;}
 }
 
+console.log(triangles(4))
 
 ////////////////////////////////////////////////////////////////////////////////
 // fizzBuzz ////////////////////////////////////////////////////////////////////
@@ -55,7 +54,6 @@ on the number:
 */
 
 function fizzBuzz(start, end) {
-
   for(let i = start; i <= end; i++){
 if(i % 3 === 0 && i % 5 === 0){
   console.log("fizzbuzz")

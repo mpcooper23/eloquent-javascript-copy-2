@@ -26,8 +26,15 @@ LOGS =>
 
 */
 
-function triangles() {
-  
+function triangles(num) {
+  let count = 0;
+
+  for (let i = '#'; i < num; i++)
+  {
+    console.log(num[i])
+count += num[i]
+  }
+  return count;
 }
 
 
@@ -48,7 +55,18 @@ on the number:
 */
 
 function fizzBuzz(start, end) {
-  
+
+  for(let i = start; i < end; i++){
+if(i % 3 === 0 && i % 5 === 0){
+  console.log("fizzbuzz")
+    }else if (i % 3 !== 0 && i % 5 !== 0){
+      console.log(i)
+    }else if (i % 3 === 0){
+      console.log("fizz")
+    }else if(i % 5){
+      console.log("buzz")
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////

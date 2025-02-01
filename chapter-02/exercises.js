@@ -27,12 +27,12 @@ LOGS =>
 */
 
 function triangles(num) {
-  let count = 0;
+  let count = '#';
 
-  for (let i = '#'; i < num; i++)
+  for (let i = 0; i < num; i++)
   {
-    console.log(num[i])
-count += num[i]
+    count += i
+    console.log(count)
   }
   return count;
 }

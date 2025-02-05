@@ -27,15 +27,14 @@ LOGS =>
 */
 
 function triangles(num) {
-  
-for (let i = 1; i <= num; i++){
   let triangle = '';
-triangle += '#'
-
-  return triangle;}
+  for (let i = 0; i <= num; i++) {
+    triangle += '#'.repeat(i) + '\n'; // Add a new line after each row
+  }
+  return triangle;
 }
 
-console.log(triangles(4))
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // fizzBuzz ////////////////////////////////////////////////////////////////////

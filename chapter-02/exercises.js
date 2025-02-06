@@ -24,16 +24,17 @@ LOGS =>
 ####
 #####
 
+I:
+O:
+C:
+
 */
 
 function triangles(num) {
-  let triangle = '';
-  for (let i = 0; i <= num; i++) {
-    triangle += '#'.repeat(i) + '\n'; // Add a new line after each row
-  }
-  return triangle;
+  for (let i = 0; i < num; i += '#') {
+ console.log(i)
 }
-
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////

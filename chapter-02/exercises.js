@@ -31,9 +31,10 @@ C:
 */
 
 function triangles(num) {
-  for (let i = 0; i <= num; i += '#') {
- console.log(i)
-}
+  let triangle = ''
+  for (let i = 1; i <= num; i++) {
+    triangle += '#'}
+ console.log(triangle)
 }
 
 

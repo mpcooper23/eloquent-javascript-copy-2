@@ -31,10 +31,13 @@ C:
 */
 
 function triangles(num) {
-  let triangle = ''
   for (let i = 1; i <= num; i++) {
-    triangle += '#'}
- console.log(triangle)
+    let triangle = '';
+    for (let j = 0; j < i; j++) {
+      triangle += '#';
+    }
+    console.log(triangle);
+  }
 }
 
 

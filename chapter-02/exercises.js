@@ -102,9 +102,24 @@ LOGS =>
 */
 
 function drawChessboard(x) {
+  let board = '';
 
+  for (let row = 0; row < x; row++) {
+    let line = '';
+    for (let col = 0; col < x; col++) {
+      // Determine whether to add a space or a #
+      if ((row + col) % 2 === 0) {
+        line += ' ';
+      } else {
+        line += '#';
+      }
+    }
+    board += line + '\n'; // Add the line to the board with a newline
+  }
 
+  console.log(board); // Log the complete board
 }
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
